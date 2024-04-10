@@ -73,12 +73,22 @@ Continuous Integration:
 ![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/472d822f-cfc1-4d1c-aea0-4660c13b2b83)
 ![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/ff2ac5fe-b463-4ac9-849f-db8565e7ced3)
 
+There are 2 ways to build CD pipeline: (1) ARM and (2) YAML
+Option (1): ARM
 Continuous Delivery (with manual approval prior to deployment to production): input is the ARM in adf_publosh branch from previous process
-- ARM Template -> Release ->
+- From the Master branch -> ARM Template -> Release ->
    - Test stage: Pre Deployment PowerShell Script (stop trigger) -> ARM Deployment -> Post Deployment PowerShell Script (start trigger) -> TEST-ADF
    - Production stage: Approval and wait for test deployment complete -> Pre Deployment PowerShell Script (stop trigger) -> ARM Deployment -> Post Deployment PowerShell Script (start trigger) -> PROD-ADF
-
-
+- Create Release pipeline: DevOps -> Project -> Release -> Pipeline -> select empty job 
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/ebb65363-8429-42b3-b2bd-2c1cbc89dc3d)
+- Create Task: click on task in Stage -> + agent job -> search for ARM template -> Manager Resource Connection -> Advanced -> Add an Azure Resource Manager service connection, select the TEST resource group (Pipeline will be able to deploy the ARM template into the TEST resource group)
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/86621ded-298d-4262-bcea-fb348ca10216)
+*** Azure student account doesnt support Service Principle Management, I will use Managed Service Identity instead.***
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/53e14b34-9c26-4c2b-8c9a-e7d1cc3c2e2c)
+    - Deployment mode:
+          - Incremental: t takes the objects or the resources from the ARM template and updates them within the resource group
+          - Complete: it will delete every resource within the resource group and applies the ARM template to that resource group
+          - Validation only: looks to see whether the ARM template has got the right information and there are no syntax errors
 
 
 
