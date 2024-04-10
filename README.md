@@ -44,6 +44,31 @@ ADF Git Configuration: configure a Git repository to the development data factor
 ![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/60ab9ed7-d603-409c-b4e7-8c78ea3a10dd)
 ![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/9a560dfa-6ef4-4f43-9296-901e46898c2d)
 
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/e557f72e-2e98-4e3f-b75b-ec6dc9dd8260)
+- Procees of Git-enabled Data Factory
+    - Create feature branch: ADF -> Author hub -> main branch -> new branch
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/08b1bbf1-a812-48b5-8959-a8af9b0da717)
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/f644519c-1668-4329-b261-01bac268b65a)
+    - Develop pipeline: create a new simple pipeline.
+    - Debug pipeline. After debug, Save All (In previous Azure projects, I always saved by hitting publish on the top row. Now it is different. Publish is only available in the master branch)
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/f647b152-b7af-49d1-9461-d16afc1162ca)
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/93e73e51-d9ad-42b3-8a87-816a729a354e)
+    - Create pull request: ADF -> feature branch -> Create pull request
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/a4443cb2-8fd5-4623-80b8-fa704e0baa03)
+    - Review Change and approve pull request: Normally, other team members will need to review and approve.But with my own project, I will approve for myself.
+    - Merge the change to collaboration branch (master): click Complete -> select Merge
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/7b2d762a-9be1-4840-8baa-2d6abaaf88da)
+
+    - Create a feature branch based on the master
+    - Update the current pipeline with changes
+    - Debug pipeline -> Save All
+    - Pull Request
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/e5cc7eb0-1d96-4dd8-ae6d-15bfeb437bef)
+    - Review change and approve
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/684e026e-d4bd-4535-941d-132c56738048)
+    - Complete Merge
+
+
 
 
 
