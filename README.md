@@ -2,7 +2,7 @@
 
 Project Description: Create CI/CD pipelines in Azure Devops to release Azure Data Factory pipelines to higher environments (Testing and Production). Also configure the Development Data Factory with the source control tool (Git) to enable collaborative development.
 
-Azure DevOps: Saas platform on Azure for implement project. It is a combination of Development teams who are responsible for writing code and testing them and operations teams who are responsible for deploying and supporting that code in production. It includes: Boards, Repors, Pipelines, Test Plans, Artifacts
+Azure DevOps: Saas platform on Azure for implement project. It is a combination of Development teams who are responsible for writing code and testing them and operations teams who are responsible for deploying and supporting that code in production. It includes: Boards, Repos, Pipelines, Test Plans, Artifacts
 CI/CD: 
 
 - Plan: gather the requirements, write users' stories, break down the tasks, and plan the work for a sprint or an iteration.
