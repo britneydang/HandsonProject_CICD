@@ -89,6 +89,11 @@ Continuous Delivery (with manual approval prior to deployment to production): in
           - Incremental: t takes the objects or the resources from the ARM template and updates them within the resource group
           - Complete: it will delete every resource within the resource group and applies the ARM template to that resource group
           - Validation only: looks to see whether the ARM template has got the right information and there are no syntax errors
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/a5fe822b-e7e7-4e12-822f-3484db3c9cbd)
+    - Click Trigger on Artifact
+![image](https://github.com/britneydang/HandsonProject_CICD/assets/110323703/190a4bde-33e6-4939-aeb7-759fbcce2fe6)
+- 
+
 
 
 
